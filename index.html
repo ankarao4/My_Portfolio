@@ -1,0 +1,667 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Golla Ankarao — Machine Learning Enthusiast, Python Developer, and Cybersecurity Learner. Explore projects, certificates, and more." />
+  <meta name="keywords" content="Golla Ankarao, Machine Learning, Python Developer, Cybersecurity, Portfolio, AI, Data Science" />
+  <meta name="author" content="Golla Ankarao" />
+  <meta property="og:title" content="Golla Ankarao | ML & Cybersecurity Portfolio" />
+  <meta property="og:description" content="Machine Learning Enthusiast | Python Developer | Cybersecurity Learner" />
+  <meta property="og:type" content="website" />
+  <title>Golla Ankarao | ML & Cybersecurity Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;900&family=Inter:wght@300;400;500;600&family=Fira+Code:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ========== NOISE OVERLAY ========== -->
+  <div class="noise-overlay"></div>
+
+  <!-- ========== CURSOR ========== -->
+  <div id="cursor" class="cursor"></div>
+  <div id="cursor-follower" class="cursor-follower"></div>
+
+  <!-- ========== NAVBAR ========== -->
+  <nav id="navbar" class="navbar">
+    <div class="nav-container">
+      <a href="#home" class="nav-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">GA</span>
+        <span class="logo-bracket">/&gt;</span>
+      </a>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#home" class="nav-link active">Home</a></li>
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#certificates" class="nav-link">Certs</a></li>
+        <li><a href="#resume" class="nav-link">Resume</a></li>
+        <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ========== HERO SECTION ========== -->
+  <section id="home" class="hero-section">
+    <canvas id="three-canvas"></canvas>
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="badge-dot"></span>
+        <span>Available for Opportunities</span>
+      </div>
+      <h1 class="hero-name">
+        <span class="glitch" data-text="Golla Ankarao">Golla Ankarao</span>
+      </h1>
+      <p class="hero-tagline">
+        <span id="typed-text"></span><span class="typed-cursor">|</span>
+      </p>
+      <p class="hero-sub">Building intelligent systems at the intersection of <span class="highlight">Machine Learning</span> &amp; <span class="highlight">Cybersecurity</span></p>
+      <div class="hero-buttons">
+        <a href="#projects" class="btn btn-primary">
+          <i class="fas fa-rocket"></i> View Projects
+        </a>
+        <a href="resume/resume.pdf" download class="btn btn-secondary">
+          <i class="fas fa-download"></i> Resume
+        </a>
+        <a href="https://github.com/ankarao4" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="fab fa-github"></i> GitHub
+        </a>
+        <a href="https://www.linkedin.com/in/golla-ankarao-302944341/" target="_blank" rel="noopener" class="btn btn-ghost">
+          <i class="fab fa-linkedin"></i> LinkedIn
+        </a>
+      </div>
+      <div class="hero-stats">
+        <div class="stat-item">
+          <span class="stat-num" data-count="5">0</span>
+          <span class="stat-label">Projects</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="8">0</span>
+          <span class="stat-label">Certificates</span>
+        </div>
+        <div class="stat-div"></div>
+        <div class="stat-item">
+          <span class="stat-num" data-count="2">0</span>
+          <span class="stat-label">Years Coding</span>
+        </div>
+      </div>
+    </div>
+    <div class="hero-scroll-indicator">
+      <span>Scroll Down</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ========== ABOUT SECTION ========== -->
+  <section id="about" class="section about-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">01. ABOUT</span>
+        <h2 class="section-title">Who Am I?</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-card glass-card">
+          <div class="about-avatar">
+            <div class="avatar-ring"></div>
+            <div class="avatar-icon">
+              <i class="fas fa-user-astronaut"></i>
+            </div>
+            <div class="avatar-status">
+              <span class="status-dot"></span>
+              <span>Open to Work</span>
+            </div>
+          </div>
+          <div class="terminal-window">
+            <div class="terminal-bar">
+              <span class="t-dot red"></span>
+              <span class="t-dot yellow"></span>
+              <span class="t-dot green"></span>
+              <span class="t-title">whoami.sh</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="t-prompt">$</span> <span class="t-cmd">cat profile.json</span></p>
+              <p class="t-out">{</p>
+              <p class="t-out">&nbsp;&nbsp;"name": "Golla Ankarao",</p>
+              <p class="t-out">&nbsp;&nbsp;"role": "ML Developer",</p>
+              <p class="t-out">&nbsp;&nbsp;"focus": "Cybersecurity AI",</p>
+              <p class="t-out">&nbsp;&nbsp;"location": "India 🇮🇳",</p>
+              <p class="t-out">&nbsp;&nbsp;"status": "Learning + Building"</p>
+              <p class="t-out">}</p>
+            </div>
+          </div>
+        </div>
+        <div class="about-info">
+          <p class="about-text">
+            I'm <strong>Golla Ankarao</strong>, a passionate <span class="highlight">Machine Learning developer</span> and <span class="highlight">Python enthusiast</span> driven by the challenge of solving real-world problems with intelligent systems. My current focus lies at the intersection of <strong>AI and Cybersecurity</strong> — building tools that detect threats and protect users in the digital world.
+          </p>
+          <p class="about-text">
+            I love working on end-to-end ML pipelines, from data preprocessing and model training to deployment. I'm continuously expanding my knowledge in cybersecurity, exploring how machine learning can be leveraged to detect phishing, malware, and network anomalies.
+          </p>
+          <div class="tech-tags">
+            <span class="tag"><i class="fab fa-python"></i> Python3</span>
+            <span class="tag"><i class="fas fa-brain"></i> ML / AI</span>
+            <span class="tag"><i class="fas fa-shield-alt"></i> Cybersecurity</span>
+            <span class="tag"><i class="fas fa-chart-bar"></i> Data Analysis</span>
+            <span class="tag"><i class="fas fa-globe"></i> Web Dev</span>
+            <span class="tag"><i class="fas fa-robot"></i> Deep Learning</span>
+          </div>
+        </div>
+      </div>
+      <!-- Skills -->
+      <div class="skills-section">
+        <h3 class="skills-title">Technical Skills</h3>
+        <div class="skills-grid">
+          <div class="skill-item" data-skill="Python3" data-level="90">
+            <div class="skill-header">
+              <div class="skill-name"><i class="fab fa-python"></i> Python3</div>
+              <div class="skill-pct">90%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 90%"></div></div>
+          </div>
+          <div class="skill-item" data-skill="Machine Learning" data-level="82">
+            <div class="skill-header">
+              <div class="skill-name"><i class="fas fa-brain"></i> Machine Learning</div>
+              <div class="skill-pct">82%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 82%"></div></div>
+          </div>
+          <div class="skill-item" data-skill="Cybersecurity" data-level="75">
+            <div class="skill-header">
+              <div class="skill-name"><i class="fas fa-shield-alt"></i> Cybersecurity</div>
+              <div class="skill-pct">75%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 75%"></div></div>
+          </div>
+          <div class="skill-item" data-skill="Data Analysis" data-level="80">
+            <div class="skill-header">
+              <div class="skill-name"><i class="fas fa-chart-line"></i> Data Analysis</div>
+              <div class="skill-pct">80%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 80%"></div></div>
+          </div>
+          <div class="skill-item" data-skill="Web Development" data-level="70">
+            <div class="skill-header">
+              <div class="skill-name"><i class="fas fa-code"></i> Web Development</div>
+              <div class="skill-pct">70%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 70%"></div></div>
+          </div>
+          <div class="skill-item" data-skill="Deep Learning" data-level="68">
+            <div class="skill-header">
+              <div class="skill-name"><i class="fas fa-network-wired"></i> Deep Learning</div>
+              <div class="skill-pct">68%</div>
+            </div>
+            <div class="skill-bar"><div class="skill-fill" style="--target: 68%"></div></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PROJECTS SECTION ========== -->
+  <section id="projects" class="section projects-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">02. PROJECTS</span>
+        <h2 class="section-title">Featured Work</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="projects-grid">
+
+        <!-- Featured Project -->
+        <article class="project-card featured-card glass-card tilt-card">
+          <div class="card-glow"></div>
+          <div class="featured-badge"><i class="fas fa-star"></i> Featured</div>
+          <div class="project-icon-wrap">
+            <div class="project-icon"><i class="fas fa-shield-virus"></i></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Phishing URL & QR Code Detector</h3>
+            <p class="project-desc">
+              An intelligent cybersecurity tool that uses <strong>Machine Learning</strong> to detect phishing URLs and QR code-based threats in real-time. Features multi-algorithm ensemble detection with confidence scoring and QR code decoding pipeline.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Scikit-learn</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">Random Forest</span>
+              <span class="tech-badge">OpenCV</span>
+              <span class="tech-badge">pyzbar</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ankarao4" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+              <span class="project-status live"><span class="dot"></span> ML Powered</span>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 2 -->
+        <article class="project-card glass-card tilt-card">
+          <div class="card-glow"></div>
+          <div class="project-icon-wrap">
+            <div class="project-icon purple"><i class="fas fa-satellite-dish"></i></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">BlackHole Network Anomaly Detector</h3>
+            <p class="project-desc">
+              ML-powered network security tool that detects blackhole attacks and network anomalies, deployed as a live web application on Render with an intuitive scanning interface.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Flask</span>
+              <span class="tech-badge">ML Models</span>
+              <span class="tech-badge">Docker</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ankarao4" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 3 -->
+        <article class="project-card glass-card tilt-card">
+          <div class="card-glow"></div>
+          <div class="project-icon-wrap">
+            <div class="project-icon green"><i class="fas fa-chart-network"></i></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Data Analysis & Visualization</h3>
+            <p class="project-desc">
+              Comprehensive data analysis pipelines using Python, Pandas, Matplotlib and Seaborn to extract insights, visualize trends, and support data-driven decision making.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">Pandas</span>
+              <span class="tech-badge">Matplotlib</span>
+              <span class="tech-badge">Seaborn</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ankarao4" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+        <!-- Project 4 -->
+        <article class="project-card glass-card tilt-card">
+          <div class="card-glow"></div>
+          <div class="project-icon-wrap">
+            <div class="project-icon orange"><i class="fas fa-spider"></i></div>
+          </div>
+          <div class="project-content">
+            <h3 class="project-title">Cyber Threat Intelligence Crawler</h3>
+            <p class="project-desc">
+              Automated web crawler that collects and processes threat intelligence data from public cybersecurity feeds, normalizes it, and provides structured alerts.
+            </p>
+            <div class="project-tech">
+              <span class="tech-badge">Python</span>
+              <span class="tech-badge">BeautifulSoup</span>
+              <span class="tech-badge">Requests</span>
+              <span class="tech-badge">SQLite</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/ankarao4" target="_blank" rel="noopener" class="project-link">
+                <i class="fab fa-github"></i> View Code
+              </a>
+            </div>
+          </div>
+        </article>
+
+      </div>
+      <div class="view-all-wrap">
+        <a href="https://github.com/ankarao4" target="_blank" rel="noopener" class="btn btn-outline">
+          <i class="fab fa-github"></i> View All on GitHub
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CERTIFICATES SECTION ========== -->
+  <section id="certificates" class="section certs-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">03. CERTIFICATES</span>
+        <h2 class="section-title">Achievements & Certifications</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="certs-grid">
+        <div class="cert-card glass-card" data-cert="cert1">
+          <div class="cert-glow"></div>
+          <div class="cert-icon"><i class="fas fa-award"></i></div>
+          <div class="cert-body">
+            <h4>Python for Data Science</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Coursera / IBM</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 2024</p>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View</div>
+        </div>
+        <div class="cert-card glass-card" data-cert="cert2">
+          <div class="cert-glow"></div>
+          <div class="cert-icon purple-icon"><i class="fas fa-brain"></i></div>
+          <div class="cert-body">
+            <h4>Machine Learning Fundamentals</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Google / Coursera</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 2024</p>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View</div>
+        </div>
+        <div class="cert-card glass-card" data-cert="cert3">
+          <div class="cert-glow"></div>
+          <div class="cert-icon green-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="cert-body">
+            <h4>Cybersecurity Essentials</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Cisco NetAcad</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 2024</p>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View</div>
+        </div>
+        <div class="cert-card glass-card" data-cert="cert4">
+          <div class="cert-glow"></div>
+          <div class="cert-icon orange-icon"><i class="fas fa-chart-bar"></i></div>
+          <div class="cert-body">
+            <h4>Data Analysis with Python</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> freeCodeCamp</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 2023</p>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View</div>
+        </div>
+        <div class="cert-card glass-card" data-cert="cert5">
+          <div class="cert-glow"></div>
+          <div class="cert-icon"><i class="fas fa-network-wired"></i></div>
+          <div class="cert-body">
+            <h4>Deep Learning Specialization</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> DeepLearning.AI</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 2024</p>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View</div>
+        </div>
+        <div class="cert-card glass-card" data-cert="cert6">
+          <div class="cert-glow"></div>
+          <div class="cert-icon purple-icon"><i class="fas fa-code"></i></div>
+          <div class="cert-body">
+            <h4>Web Development Bootcamp</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Udemy</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 2023</p>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View</div>
+        </div>
+        <div class="cert-card glass-card" data-cert="cert7">
+          <div class="cert-glow"></div>
+          <div class="cert-icon green-icon"><i class="fas fa-lock"></i></div>
+          <div class="cert-body">
+            <h4>Ethical Hacking Basics</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> EC-Council</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 2025</p>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View</div>
+        </div>
+        <div class="cert-card glass-card" data-cert="cert8">
+          <div class="cert-glow"></div>
+          <div class="cert-icon orange-icon"><i class="fab fa-python"></i></div>
+          <div class="cert-body">
+            <h4>Advanced Python Programming</h4>
+            <p class="cert-issuer"><i class="fas fa-building"></i> Udacity</p>
+            <p class="cert-date"><i class="fas fa-calendar"></i> 2025</p>
+          </div>
+          <div class="cert-hover-overlay"><i class="fas fa-search-plus"></i> View</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificate Modal -->
+  <div id="cert-modal" class="modal-overlay">
+    <div class="modal-box glass-card">
+      <button class="modal-close" id="modal-close"><i class="fas fa-times"></i></button>
+      <div class="modal-cert-icon"><i class="fas fa-certificate"></i></div>
+      <h3 id="modal-title" class="modal-title">Certificate Title</h3>
+      <p id="modal-issuer" class="modal-issuer">Issuer</p>
+      <p id="modal-date" class="modal-date">Year</p>
+      <div class="modal-badge">
+        <i class="fas fa-check-circle"></i> Verified Achievement
+      </div>
+    </div>
+  </div>
+
+  <!-- ========== RESUME SECTION ========== -->
+  <section id="resume" class="section resume-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">04. RESUME</span>
+        <h2 class="section-title">My Resume</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="resume-wrap">
+        <div class="resume-preview glass-card">
+          <div class="resume-header-bar">
+            <div class="resume-dots">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="resume-filename">resume.pdf</span>
+          </div>
+          <div class="resume-content-preview">
+            <div class="resume-mock">
+              <div class="rm-name">Golla Ankarao</div>
+              <div class="rm-role">Machine Learning Developer | Python Enthusiast</div>
+              <div class="rm-contact">
+                <span><i class="fab fa-github"></i> ankarao4</span>
+                <span><i class="fab fa-linkedin"></i> golla-ankarao</span>
+                <span><i class="fas fa-map-marker-alt"></i> India</span>
+              </div>
+              <div class="rm-section-title">Education</div>
+              <div class="rm-item">
+                <div class="rm-item-title">B.Tech / Relevant Degree</div>
+                <div class="rm-item-sub">Computer Science | 2022–2026</div>
+              </div>
+              <div class="rm-section-title">Key Skills</div>
+              <div class="rm-tags">
+                <span>Python3</span><span>ML</span><span>Cybersecurity</span>
+                <span>Data Analysis</span><span>Flask</span><span>Scikit-learn</span>
+              </div>
+              <div class="rm-section-title">Featured Project</div>
+              <div class="rm-item">
+                <div class="rm-item-title">Phishing URL & QR Code Detector</div>
+                <div class="rm-item-sub">ML-powered cybersecurity tool | Python, Flask, Scikit-learn</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="resume-actions">
+          <h3>Download My Full Resume</h3>
+          <p>Get the complete PDF with my full education, experience, skills, and project details.</p>
+          <a href="resume/resume.pdf" download class="btn btn-primary resume-btn">
+            <i class="fas fa-file-download"></i> Download Resume (PDF)
+          </a>
+          <div class="resume-note">
+            <i class="fas fa-info-circle"></i> Updated March 2026
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== PORTFOLIO / FAVORITES SECTION ========== -->
+  <section id="portfolio" class="section portfolio-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">05. PORTFOLIO</span>
+        <h2 class="section-title">Highlights & Favorites</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="portfolio-grid">
+        <div class="portfolio-item glass-card">
+          <div class="pi-icon"><i class="fas fa-trophy"></i></div>
+          <h4>ML Detection System</h4>
+          <p>Built a real-world phishing detection system achieving 95%+ accuracy across multiple ML classifiers with ensemble techniques.</p>
+          <div class="pi-tags"><span>ML</span><span>Python</span></div>
+        </div>
+        <div class="portfolio-item glass-card">
+          <div class="pi-icon green-pi"><i class="fas fa-rocket"></i></div>
+          <h4>Full-Stack Deployment</h4>
+          <p>Deployed ML applications on Render and Cloudflare with Docker containerization, CI/CD pipelines, and production-ready configurations.</p>
+          <div class="pi-tags"><span>Docker</span><span>DevOps</span></div>
+        </div>
+        <div class="portfolio-item glass-card">
+          <div class="pi-icon purple-pi"><i class="fas fa-graduation-cap"></i></div>
+          <h4>Continuous Learning</h4>
+          <p>Earned 8+ certifications in Python, Machine Learning, Cybersecurity, and Data Science from top platforms like Coursera, Cisco, and Google.</p>
+          <div class="pi-tags"><span>Learning</span><span>Growth</span></div>
+        </div>
+        <div class="portfolio-item glass-card">
+          <div class="pi-icon orange-pi"><i class="fas fa-users"></i></div>
+          <h4>Open Source Contributor</h4>
+          <p>Active GitHub profile with multiple repositories showcasing ML experiments, data analysis notebooks, and cybersecurity tools.</p>
+          <div class="pi-tags"><span>GitHub</span><span>Open Source</span></div>
+        </div>
+      </div>
+      <!-- Timeline -->
+      <div class="timeline-wrap">
+        <h3 class="timeline-heading">Journey</h3>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="tl-dot"></div>
+            <div class="tl-content glass-card">
+              <span class="tl-year">2022</span>
+              <h4>Started Coding Journey</h4>
+              <p>Began with Python fundamentals, data structures, and algorithms.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot purple-dot"></div>
+            <div class="tl-content glass-card">
+              <span class="tl-year">2023</span>
+              <h4>Dived into Machine Learning</h4>
+              <p>Completed ML courses, built first predictive models, earned first certifications.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot green-dot"></div>
+            <div class="tl-content glass-card">
+              <span class="tl-year">2024</span>
+              <h4>Cybersecurity & Deployment</h4>
+              <p>Built phishing detector, blackhole detector, deployed to cloud. Cisco Cybersecurity cert earned.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="tl-dot orange-dot"></div>
+            <div class="tl-content glass-card">
+              <span class="tl-year">2025–Present</span>
+              <h4>Advanced AI & Portfolio</h4>
+              <p>Pursuing deep learning, ethical hacking, and building production-grade AI systems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== CONTACT SECTION ========== -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag">06. CONTACT</span>
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-intro">I'm actively looking for new opportunities. Whether you have a project, a question, or just want to say hi — my inbox is always open!</p>
+          <div class="contact-links">
+            <a href="https://www.linkedin.com/in/golla-ankarao-302944341/" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="cl-icon linkedin"><i class="fab fa-linkedin"></i></div>
+              <div class="cl-text">
+                <span class="cl-label">LinkedIn</span>
+                <span class="cl-val">golla-ankarao-302944341</span>
+              </div>
+            </a>
+            <a href="https://github.com/ankarao4" target="_blank" rel="noopener" class="contact-link-item">
+              <div class="cl-icon github"><i class="fab fa-github"></i></div>
+              <div class="cl-text">
+                <span class="cl-label">GitHub</span>
+                <span class="cl-val">ankarao4</span>
+              </div>
+            </a>
+            <div class="contact-link-item">
+              <div class="cl-icon email"><i class="fas fa-envelope"></i></div>
+              <div class="cl-text">
+                <span class="cl-label">Email</span>
+                <span class="cl-val">ankarao4@gmail.com</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <form id="contact-form" class="contact-form glass-card" novalidate>
+          <div class="form-group">
+            <input type="text" id="f-name" class="form-input" placeholder=" " required />
+            <label for="f-name" class="form-label">Your Name</label>
+            <span class="form-error">Please enter your name</span>
+          </div>
+          <div class="form-group">
+            <input type="email" id="f-email" class="form-input" placeholder=" " required />
+            <label for="f-email" class="form-label">Your Email</label>
+            <span class="form-error">Please enter a valid email</span>
+          </div>
+          <div class="form-group">
+            <input type="text" id="f-subject" class="form-input" placeholder=" " required />
+            <label for="f-subject" class="form-label">Subject</label>
+            <span class="form-error">Please enter a subject</span>
+          </div>
+          <div class="form-group">
+            <textarea id="f-message" class="form-input form-textarea" placeholder=" " required rows="5"></textarea>
+            <label for="f-message" class="form-label">Message</label>
+            <span class="form-error">Please enter your message</span>
+          </div>
+          <button type="submit" class="btn btn-primary form-submit" id="form-submit">
+            <span class="btn-text"><i class="fas fa-paper-plane"></i> Send Message</span>
+            <span class="btn-loading"><i class="fas fa-spinner fa-spin"></i> Sending…</span>
+          </button>
+          <div class="form-success" id="form-success">
+            <i class="fas fa-check-circle"></i> Message sent! I'll get back to you soon.
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- ========== FOOTER ========== -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-logo">
+        <span class="logo-bracket">&lt;</span>
+        <span class="logo-text">Golla Ankarao</span>
+        <span class="logo-bracket">/&gt;</span>
+      </div>
+      <p class="footer-sub">Machine Learning Enthusiast | Python Developer | Cybersecurity Learner</p>
+      <div class="footer-socials">
+        <a href="https://github.com/ankarao4" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/golla-ankarao-302944341/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      </div>
+      <p class="footer-copy">© 2026 Golla Ankarao. Crafted with <span class="heart">♥</span> &amp; Python.</p>
+    </div>
+  </footer>
+
+  <!-- ========== SCROLL TO TOP ========== -->
+  <button id="scroll-top" class="scroll-top-btn" aria-label="Scroll to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+  <script src="js/three-bg.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
